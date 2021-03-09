@@ -1,0 +1,36 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": false,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["ES2020", "DOM"],
+    "mapRoot": "./",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "importHelpers": true,
+    "outDir": "../node_modules/out-tsc",
+    "sourceMap": true,
+    "target": "ES5",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "plugins": [
+    {
+      "name": "typescript-tslint-plugin",
+      "alwaysShowRuleFailuresAsWarnings": true,
+      "ignoreDefinitionFiles": true,
+      "configFile": "tslint.json",
+      "suppressWhileTypeErrorsPresent": true
+    }
+  ],
+  "exclude": ["node_modules"],
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictTemplates": true,
+    "strictInjectionParameters": true
+  }
+}

@@ -28,6 +28,8 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Run Test
-        run: npm test
+        run: npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+      - name: Run E2E
+        run: npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
       - name: Run Build
         run: npm run build

@@ -36,6 +36,6 @@ module.exports = {
       { preset: 'angular' },
     ],
     '@semantic-release/changelog',
-    '@semantic-release/git',
+    '@semantic-release/github',
   ],
 };

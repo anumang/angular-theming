@@ -22,7 +22,7 @@ module.exports = {
     'body-max-line-length': [
       2,
       'always',
-      100,
+      200,
     ],
     'footer-max-line-length': [
       2,

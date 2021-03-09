@@ -8,7 +8,7 @@
 
 - **upgrade:** angular major upgrade with version 10
 
-# 1.0.0 (2021-03-09)
+# [1.0.0](https://github.com/anumang/angular-theming/releases/tag/v1.0.0) (2021-03-09)
 
 ### Features
 

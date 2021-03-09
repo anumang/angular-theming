@@ -36,18 +36,17 @@ module.exports = {
       { preset: 'angular' },
     ],
     '@semantic-release/changelog',
+    '@semantic-release/npm',
     [
-      '@semantic-release/github',
+      '@semantic-release/git',
       {
         assets: [
-          {
-            path:
-              'CHANGELOG.md',
-            label:
-              'CHANGELOG.md',
-          },
+          'CHANGELOG.md',
+          'package.json',
+          '.releaserc.js',
         ],
       },
     ],
+    '@semantic-release/github',
   ],
 };
